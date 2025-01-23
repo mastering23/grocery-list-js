@@ -36,12 +36,24 @@ const getUpperCaseNames = (itemNames) => {
 
 groceryList.map(getUpperCaseNames);
 
-// -getItemById => Takes in an array of items and an id. Returns the item in the array with the given id. Hint: use .find
+// -getItemById => Takes in an array of items and an id. Returns the item in the array with the given id. Hint: use .find✅
 
 console.log(`\n<<<<<<<<<<<<<<<<<<[ GET ITEMS BY ID ]>>>>>>>>>>>>>>>>>>>>>\n`);
 
 const getItemById = (itemFindBy) => {
-  console.log(itemFindBy.id); //testing console.log(itemFindBy.id,itemFindBy.name);
+console.log(itemFindBy.id); //testing console.log(itemFindBy.id,itemFindBy.name);
 };
 
 groceryList.find(getItemById);
+
+//getItemsByCategory => Takes in an array of items and a category string. Returns an array of items that belong to the given `category`. Hint: use .filter ✅
+
+console.log(`\n<<<<<<<<<<<<<<<<<<[ GET ITEMS BY CATEGORY ]>>>>>>>>>>>>>>>>>>>>>\n`);
+
+const getItemsByCategory = (filterItemBy) =>{
+console.log(filterItemBy.category);
+
+}
+groceryList.filter(getItemsByCategory);
+
+

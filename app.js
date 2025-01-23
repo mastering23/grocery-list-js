@@ -25,9 +25,26 @@ console.log(singleItem.name)
 
  groceryList.forEach((logNames));
 
-// -getUpperCaseNames => Takes in an array of items and returns an array of item names in all uppercase. Hint: use .map
+
+// -getUpperCaseNames => Takes in an array of items and returns an array of item names in all uppercase. Hint: use .map✅
+// groceryList.map((getUpperCaseNames)=>{console.log(getUpperCaseNames.name.toUpperCase())});
+
 console.log(`\n<<<<<<<<<<<<<<<<<<[ UPPERCASE ]>>>>>>>>>>>>>>>>>>>>>\n`);
 
-groceryList.map((getUpperCaseNames)=>{console.log(getUpperCaseNames.name.toUpperCase())});
+const getUpperCaseNames = (itemNames) =>{
+console.log(itemNames.name.toUpperCase());
+}
+
+groceryList.map(getUpperCaseNames);
 
 
+// -getItemById => Takes in an array of items and an id. Returns the item in the array with the given id. Hint: use .find
+
+console.log(`\n<<<<<<<<<<<<<<<<<<[ GET ITEMS BY ID ]>>>>>>>>>>>>>>>>>>>>>\n`);
+
+const getItemById = (itemFindBy) =>{
+
+ console.log(itemFindBy.id,itemFindBy.name);
+}
+
+groceryList.find(getItemById);

@@ -13,13 +13,21 @@ const groceryList = [
   { id: 8, name: "sourdough", price: 5.5, category: "grains", quantity: 81 },
 ];
 
-//3)Create the following functions
-//logNames => Takes in an array of items and console.logs the name of each item in the given array. Hint: use .forEach✅
+//3) -Create the following functions
+    //logNames => Takes in an array of items and console.logs the name of each item in the given array. Hint: use .forEach✅
+        //groceryList.forEach((item) => {console.log(item.name)}); //anonymous function
+
+console.log(`\n<<<<<<<<<<[ Printing using forEach ]>>>>>>>>>>>>>>>\n`);
 
 const logNames =(singleItem) =>{
 console.log(singleItem.name)
 }
+
  groceryList.forEach((logNames));
 
-//groceryList.forEach((item) => {console.log(item.name)}); //anonymous function
+// -getUpperCaseNames => Takes in an array of items and returns an array of item names in all uppercase. Hint: use .map
+console.log(`\n<<<<<<<<<<<<<<<<<<[ UPPERCASE ]>>>>>>>>>>>>>>>>>>>>>\n`);
+
+groceryList.map((getUpperCaseNames)=>{console.log(getUpperCaseNames.name.toUpperCase())});
+
 

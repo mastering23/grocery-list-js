@@ -41,19 +41,30 @@ groceryList.map(getUpperCaseNames);
 console.log(`\n<<<<<<<<<<<<<<<<<<[ GET ITEMS BY ID ]>>>>>>>>>>>>>>>>>>>>>\n`);
 
 const getItemById = (itemFindBy) => {
-console.log(itemFindBy.id); //testing console.log(itemFindBy.id,itemFindBy.name);
+  console.log(itemFindBy.id); //testing console.log(itemFindBy.id,itemFindBy.name);
 };
 
 groceryList.find(getItemById);
 
 //getItemsByCategory => Takes in an array of items and a category string. Returns an array of items that belong to the given `category`. Hint: use .filter ✅
 
-console.log(`\n<<<<<<<<<<<<<<<<<<[ GET ITEMS BY CATEGORY ]>>>>>>>>>>>>>>>>>>>>>\n`);
+console.log(
+  `\n<<<<<<<<<<<<<<<<<<[ GET ITEMS BY CATEGORY ]>>>>>>>>>>>>>>>>>>>>>\n`
+);
 
-const getItemsByCategory = (filterItemBy) =>{
-console.log(filterItemBy.category);
-
-}
+const getItemsByCategory = (filterItemBy) => {
+  console.log(filterItemBy.category);
+};
 groceryList.filter(getItemsByCategory);
 
+//countItems => Takes in an array of items and returns the total quantity of all items. Hint: use .reduce
 
+console.log(`\n<<<<<<<<<<<<<<<<<<[ COUNT ITEMS ]>>>>>>>>>>>>>>>>>>>>>\n`);
+
+  groceryList.reduce((accumulation, value) => {
+  
+  const totalQuantity = accumulation + value.quantity;
+  console.log(`Total : ${totalQuantity}`);
+  return totalQuantity;
+
+},0);

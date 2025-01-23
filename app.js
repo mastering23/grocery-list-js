@@ -14,37 +14,34 @@ const groceryList = [
 ];
 
 //3) -Create the following functions
-    //logNames => Takes in an array of items and console.logs the name of each item in the given array. Hint: use .forEach✅
-        //groceryList.forEach((item) => {console.log(item.name)}); //anonymous function
+//logNames => Takes in an array of items and console.logs the name of each item in the given array. Hint: use .forEach✅
+//groceryList.forEach((item) => {console.log(item.name)}); //anonymous function
 
 console.log(`\n<<<<<<<<<<[ Printing using forEach ]>>>>>>>>>>>>>>>\n`);
 
-const logNames =(singleItem) =>{
-console.log(singleItem.name)
-}
+const logNames = (singleItem) => {
+  console.log(singleItem.name);
+};
 
- groceryList.forEach((logNames));
-
+groceryList.forEach(logNames);
 
 // -getUpperCaseNames => Takes in an array of items and returns an array of item names in all uppercase. Hint: use .map✅
 // groceryList.map((getUpperCaseNames)=>{console.log(getUpperCaseNames.name.toUpperCase())});
 
 console.log(`\n<<<<<<<<<<<<<<<<<<[ UPPERCASE ]>>>>>>>>>>>>>>>>>>>>>\n`);
 
-const getUpperCaseNames = (itemNames) =>{
-console.log(itemNames.name.toUpperCase());
-}
+const getUpperCaseNames = (itemNames) => {
+  console.log(itemNames.name.toUpperCase());
+};
 
 groceryList.map(getUpperCaseNames);
-
 
 // -getItemById => Takes in an array of items and an id. Returns the item in the array with the given id. Hint: use .find
 
 console.log(`\n<<<<<<<<<<<<<<<<<<[ GET ITEMS BY ID ]>>>>>>>>>>>>>>>>>>>>>\n`);
 
-const getItemById = (itemFindBy) =>{
-
- console.log(itemFindBy.id,itemFindBy.name);
-}
+const getItemById = (itemFindBy) => {
+  console.log(itemFindBy.id); //testing console.log(itemFindBy.id,itemFindBy.name);
+};
 
 groceryList.find(getItemById);

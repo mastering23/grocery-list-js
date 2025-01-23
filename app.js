@@ -57,14 +57,26 @@ const getItemsByCategory = (filterItemBy) => {
 };
 groceryList.filter(getItemsByCategory);
 
-//countItems => Takes in an array of items and returns the total quantity of all items. Hint: use .reduce
+//countItems => Takes in an array of items and returns the total quantity of all items. Hint: use .reduce✅
 
-console.log(`\n<<<<<<<<<<<<<<<<<<[ COUNT ITEMS ]>>>>>>>>>>>>>>>>>>>>>\n`);
+console.log(`\n<<<<<<<<<<<<<<<<<<[ COUNT ITEM TOTAL QUANTITY ]>>>>>>>>>>>>>>>>>>>>>\n`);
 
   groceryList.reduce((accumulation, value) => {
   
   const totalQuantity = accumulation + value.quantity;
   console.log(`Total : ${totalQuantity}`);
   return totalQuantity;
+
+},0);
+
+//calculateTotalPrice => Takes in an array of items and returns the cost of all given items. Hint: use .reduce✅
+
+console.log(`\n<<<<<<<<<<<<<<<<<<[ CALCULATE TOTAL PRICE ]>>>>>>>>>>>>>>>>>>>>>\n`);
+
+groceryList.reduce((accumulation, value) => {
+  
+  const totalPrices = accumulation + value.price;
+  console.log(`Total Price : ${totalPrices}`);
+  return  totalPrices;
 
 },0);

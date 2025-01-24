@@ -13,7 +13,4 @@ using array methods such as `find()`, `map()`, `reduce()`, and more.
 
 
 ## OUTPUT
-![alt text](image.png)
-
-![alt text](image-1.png)
-
+![alt text](image-2.png)

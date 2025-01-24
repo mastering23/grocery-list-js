@@ -50,22 +50,20 @@ groceryList.filter(getItemsByCategory);
 
 console.log(`\n<<<<<<<<<<<<<<<<<<[ COUNT ITEM TOTAL QUANTITY ]>>>>>>>>>>>>>>>>>>>>>\n`);//✅
 
-  groceryList.reduce((accumulation, value) => {
-  
-  const totalQuantity = accumulation + value.quantity;
-  console.log(`Total : ${totalQuantity}`);
-  return totalQuantity;
+const sumQuantity = (accumulation,value) =>{ 
+  return accumulation + value.quantity;
+}
+const totalQuantity = groceryList.reduce(sumQuantity,0);
 
-},0);
-
+console.log(`Total quantity : $${totalQuantity}`);
 
 
 console.log(`\n<<<<<<<<<<<<<<<<<<[ CALCULATE TOTAL PRICE ]>>>>>>>>>>>>>>>>>>>>>\n`);//✅
 
-groceryList.reduce((accumulation, value) => {
-  
-  const totalPrices = accumulation + value.price;
-  console.log(`Total Price : ${totalPrices}`);
-  return  totalPrices;
+const sumPrices = (accumulation,value) =>{ 
+  return accumulation + value.price;
+}
 
-},0);
+const totalPrice = groceryList.reduce(sumPrices,0);
+
+console.log(`Total prices : $${totalPrice}`);

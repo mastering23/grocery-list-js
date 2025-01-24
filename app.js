@@ -27,8 +27,6 @@ const getUpperCaseNames = (itemNames) => {
 
 groceryList.map(getUpperCaseNames);
 
-
-
 console.log(`\n<<<<<<<<<<<<<<<<<<[ GET ITEMS BY ID ]>>>>>>>>>>>>>>>>>>>>>\n`);//✅
 
 const getItemById = (itemFindBy) => {
@@ -55,7 +53,7 @@ const sumQuantity = (accumulation,value) =>{
 }
 const totalQuantity = groceryList.reduce(sumQuantity,0);
 
-console.log(`Total quantity : $${totalQuantity}`);
+console.log(`Total quantity : ${totalQuantity}`);
 
 
 console.log(`\n<<<<<<<<<<<<<<<<<<[ CALCULATE TOTAL PRICE ]>>>>>>>>>>>>>>>>>>>>>\n`);//✅
